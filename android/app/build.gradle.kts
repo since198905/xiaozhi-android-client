@@ -5,7 +5,7 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 dependencies {
-    implementation 'com.google.android.play:core:1.10.3'  // ✅ 正确位置
+implementation("com.google.android.play:core:1.10.3")
     // 其他依赖...
 }
 android {
