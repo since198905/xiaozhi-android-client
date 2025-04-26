@@ -4,7 +4,10 @@ plugins {
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
 }
-
+dependencies {
+    implementation 'com.google.android.play:core:1.10.3'  // ✅ 正确位置
+    // 其他依赖...
+}
 android {
     namespace = "com.lhht.ai_assistant"
     compileSdk = flutter.compileSdkVersion
@@ -49,6 +52,7 @@ android {
             isDebuggable = true
         }
     }
+
 }
 
 flutter {

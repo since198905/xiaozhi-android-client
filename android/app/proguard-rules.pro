@@ -24,3 +24,11 @@
     public static int d(...);
     public static int i(...);
 } 
+
+# 保留 Play Core 相关类
+-keep class com.google.android.play.core.** { *; }
+-keep class com.google.android.play.core.tasks.** { *; }
+
+# 保留 Flutter 延迟组件相关类
+-keep class io.flutter.embedding.engine.deferredcomponents.** { *; }
+
